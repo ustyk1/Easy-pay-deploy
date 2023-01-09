@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Easy Pay</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="./img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="./img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="./img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="./img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="./img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <input type="checkbox" id="toggle-menu" hidden>
+            <aside class="sidebar-left">
+  <nav class="nav-menu">
+  <div class="sidebar-left__logo logo">
+    <div class="logo__image-wrapper">
+      <img src="./img/sprites/logo.svg" alt="logo">
+    </div>
+    <h1 class="logo__text">EasyPay</h1>
+  </div>
+  <p class="nav-menu__header">Main Menu</p>
+  <ul class="nav-menu__list  list">
+    <li class="list__item list__item_active item">
+      <a class="active"><span class="item__icon item__icon_1"></span>Dashboard</a>
+    </li>
+    <li class="list__item">
+      <a><span class="item__icon item__icon_2"></span>Transactions</a>
+    </li>
+    <li class="list__item">
+      <a><span class="item__icon item__icon_3"></span>Transfer</a>
+    </li>
+    <li class="list__item">
+      <a><span class="item__icon item__icon_4"></span>Deposit</a>
+    </li>
+    <li class="list__item">
+      <a><span class="item__icon item__icon_5"></span>Withdraw</a>
+    </li>
+    <li class="list__item">
+      <a><span class="item__icon item__icon_6"></span>Payments</a>
+    </li>
+    <li class="list__item">
+      <a><span class="item__icon item__icon_7"></span>Messages</a>
+    </li>
+    <li class="list__item">
+      <a><span class="item__icon item__icon_8"></span>Account</a>
+    </li>
+    <li class="list__item">
+      <a><span class="item__icon item__icon_9"></span>Settings</a>
+    </li>
+  </ul>
+</nav>
+</aside>
+            <main class="main-block">
+  <header class="header wrap">
+  
+
+  <div class="header__greeting">
+    <h2>Welcome Back!</h2>
+    <p>Ricardo Thompson</p>
+  </div>
+
+  <label class="hamburger" id="hamburger" for="toggle-menu">
+    <span class="hamburger__line hamburger__line_1"></span>
+    <span class="hamburger__line hamburger__line_2"></span>
+    <span class="hamburger__line hamburger__line_3"></span>
+  </label>
+
+  <div class="header__search-transactions">
+    <input name="search-transactions" type="search" placeholder="Search transactions...">
+    <span></span>
+  </div>
+
+ 
+</header>
+  <div class="total-balance wrap">
+  <h2 class="total-balance__header">Total Balance</h2>
+  <div class="total-balance__balance-currency select">
+    <div class="selectBtn" data-type="firstOption">USDC</div>
+    <div class="selectDropdown">
+      <div class="option" data-option="content_1" data-type="firstOption">USDC</div>
+      <div class="option" data-option="content_2" data-type="secondOption">BTC</div>
+      <div class="option" data-option="content_3" data-type="thirdOption">BTH</div>
+      <div class="option" data-option="content_4" data-type="fourthOption">ETH</div>
+      <div class="option" data-option="content_5" data-type="fifthOption">ETC</div>
+      <div class="option" data-option="content_6" data-type="sixthOption">LTC</div>
+    </div>
+  </div>
+  <div class="total-balance__sum">
+    <p id="content_1" class="sum total-balance__current-balance">54,819.74&nbsp;<span>usdc</span></p>
+    <p id="content_2" class="inv sum total-balance__current-balance">45,112.23&nbsp;<span>BTC</span></p>
+    <p id="content_3" class="inv sum total-balance__current-balance">39,569.01&nbsp;<span>BTH</span></p>
+    <p id="content_4" class="inv sum total-balance__current-balance">53,711.01&nbsp;<span>ETH</span></p>
+    <p id="content_5" class="inv sum total-balance__current-balance">51,905.01&nbsp;<span>ETC</span></p>
+    <p id="content_6" class="inv sum total-balance__current-balance">50,778.01&nbsp;<span>LTC</span></p>
+  </div>
+  <p class="total-balance__wallet-id">Wallet ID: 2QVT7C0LOWEJ</p>
+  <div class="total-balance__buttons-wrap">
+    <button class="total-balance__button total-balance__button_dark">Deposit</button>
+    <button class="total-balance__button total-balance__button_light">Withdraw</button>
+  </div>
+</div>
+  <div class="recent-transactions wrap">
+  <input type="checkbox" name="" id="recent-transactions" hidden>
+  <div class="recent-transactions__header">
+    <span>Recent Transactions</span>
+    <label for="recent-transactions">View All<span></span></label>
+  </div>
+  <div class="recent-transactions__table-body-wrapper">
+    <table class="recent-transactions__table table">
+      <thead class="table__header">
+        <tr>
+          <th scope="col">Wallet ID</th>
+          <th scope="col">Date</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody class="table__body">
+        <tr class="table__row">
+          <td data-label="Wallet ID">
+            <p>DY04210S0XA5</p>
+            <p>Hash: 2111853732263042</p>
+          </td>
+          <td data-label="Date">May 23, 2022</td>
+          <td data-label="Amount">$250.00</td>
+          <td data-label="Status">Completed</td>
+        </tr>
+        <tr class="table__row">
+          <td data-label="Wallet ID">
+            <p>PILMA81KS4JA</p>
+            <p>Hash: 0348408522616817</p>
+          </td>
+          <td data-label="Date">May 19, 2022</td>
+          <td data-label="Amount">$980.00</td>
+          <td data-label="Status">Completed</td>
+        </tr>
+        <tr class="table__row">
+          <td data-label="Wallet ID">
+            <p>JV72FR6TIL1S</p>
+            <p>Hash: 1555845473775037</p>
+          </td>
+          <td data-label="Date">May 15, 2022 </td>
+          <td data-label="Amount">$290.00</td>
+          <td data-label="Status">Failed</td>
+        </tr>
+        <tr class="table__row">
+          <td data-label="Wallet ID">
+            <p>LOPB32FKS4SS</p>
+            <p>Hash: 5698236695122455</p>
+          </td>
+          <td data-label="Date">May 10, 2022 </td>
+          <td data-label="Amount">$3750.00</td>
+          <td data-label="Status">Completed</td>
+        </tr>
+        <tr class="table__row">
+          <td data-label="Wallet ID">
+            <p>PJSRV61KSDSA</p>
+            <p>Hash: 7788236501234566</p>
+          </td>
+          <td data-label="Date">May 08, 2022 </td>
+          <td data-label="Amount">$60.00</td>
+          <td data-label="Status">Failed</td>
+        </tr>
+        <tr class="table__row">
+          <td data-label="Wallet ID">
+            <p>JKBSF345ONH1</p>
+            <p>Hash: 7713654000295144</p>
+          </td>
+          <td data-label="Date">May 01, 2022 </td>
+          <td data-label="Amount">$565.00</td>
+          <td data-label="Status">Failed</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</main>
+            <aside class="sidebar-right">
+  <div class="bank-card wrap">
+  <img src="./img/sprites/card.png" alt="Bank card">
+</div>
+  <div class="quick-transfer wrap"> 
+  <div class="quick-transfer__header">
+    <span>Quick Transfer</span>
+    <span></span>
+  </div>
+  <div class="quick-transfer__card-number">
+    <input type="text" placeholder="573489534789 ">
+  </div>
+  <div class="quick-transfer__amount-currency">
+    <input type="text" placeholder="356.87" class="quick-transfer__amount">
+    <div class="quick-transfer__currency select">
+      <div class="selectBtn" data-type="firstOption">USDC</div>
+      <div class="selectDropdown">
+        <div class="option" data-type="firstOption">USDC</div>
+        <div class="option" data-type="secondOption">BTC</div>
+        <div class="option" data-type="thirdOption">BTH</div>
+        <div class="option" data-type="fourthOption">ETH</div>
+        <div class="option" data-type="fifthOption">ETC</div>
+        <div class="option" data-type="sixthOption">LTC</div>
+      </div>
+    </div>
+  </div>
+  <div class="quick-transfer__confirm-transfer"> 
+    <input type="submit" value="Submit" class="quick-transfer__submit">
+    <button class="quick-transfer__save-address">Save address</button>
+  </div>
+</div>
+  <div class="transfers">
+  <input type="checkbox" name="" id="transfers" hidden>
+  <div class="transfers__header">
+    <span>Transfers</span>
+  </div>
+  <div class="transfers__table-body-wrapper">
+    <table class="transfers__table table">
+      <thead class="table__header">
+        <tr>
+          <th>Scheduled Transfers</th>
+          <th><label for="transfers">View All<span></span></label></th>
+        </tr>
+      </thead>
+      <tbody class="table__body">
+        <tr class="table__row">
+          <td>
+            <p>L05PL0PE0ZCV</p>
+            <p>May 23, 2022 at 06:25 am</p>
+          </td>
+          <td>- $754.90</td>
+        </tr>
+        <tr class="table__row">
+          <td>
+            <p>LCFYO7IA2ILF</p>
+            <p>May 15, 2022 at 11:00 pm</p>
+          </td>
+          <td>- $223.00</td>
+        </tr>
+        <tr class="table__row">
+          <td>
+            <p>JV72FR6TIL1S</p>
+            <p>May 10, 2022 at 07:00 pm</p>
+          </td>
+          <td>- $74.00</td>
+        </tr>
+        <tr class="table__row">
+          <td>
+            <p>LOPB32FKS4SS</p>
+            <p>May 05, 2022 at 10:55 pm</p>
+          </td>
+          <td>- $18.00</td>
+        </tr>
+        <tr class="table__row">
+          <td>
+            <p>PJSRV61KSDSA</p>
+            <p>April 25, 2022 at 11:03 pm</p>
+          </td>
+          <td>- $1125.00</td>
+        </tr>
+        <tr class="table__row">
+          <td>
+            <p>JKBSF345ONH1</p>
+            <p>April 17, 2022 at 08:25 pm</p>
+          </td>
+          <td>- $207.00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</aside>  
+        </div>
+        <script src="js/vendor.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>
